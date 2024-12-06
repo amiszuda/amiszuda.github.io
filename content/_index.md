@@ -32,7 +32,7 @@ sections:
           parallax: false
           height: 50
         card:
-          css_style: "height: 200px; padding-top: 0rem; padding-bottom: 2rem;"
+          css_style: "height: 100px; padding-top: 0rem; padding-bottom: 2rem;"
   - block: markdown
     content:
       title: 'My Research' #'📚 My Research'
