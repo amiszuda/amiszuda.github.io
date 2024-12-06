@@ -30,7 +30,7 @@ sections:
           size: cover
           position: center
           parallax: false
-          height: 50vh
+          height: 50
   - block: markdown
     content:
       title: 'My Research' #'📚 My Research'
