@@ -25,8 +25,8 @@ role: Astrophysicist, Asteroseismologist
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: |
-      aNicolaus Copernicus Astronomical Center  
-      of the Polish Academy of Sciences  
+      Nicolaus Copernicus Astronomical Center \n 
+      of the Polish Academy of Sciences  <br>
       Warsaw, Poland
     url: https://www.camk.edu.pl/en/
 
