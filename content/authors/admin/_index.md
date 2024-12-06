@@ -167,6 +167,7 @@ education:
 
 ## About Me
 
-I am an astrophysicist from Poland specializing in binary star systems and asteroseismology. Currently, I am a post-doctoral researcher at the Nicolaus Copernicus Astronomical Center of the Polish Academy of Sciences in Warsaw, Poland. I earned my PhD in 2023 from the University of Wroclaw, where I focused on the “Evolution and pulsations of β Cephei and δ Scuti stars in eclipsing binary systems” under the supervision of Prof. Jadwiga Daszyńska-Daszkiewicz.
+I am an astrophysicist from Poland specializing in binary star systems and asteroseismology. Currently, I am a post-doctoral researcher at the Nicolaus Copernicus Astronomical Center of the Polish Academy of Sciences in Warsaw, Poland. 
+<!-- I earned my PhD in 2023 from the University of Wroclaw, where I focused on the “Evolution and pulsations of β Cephei and δ Scuti stars in eclipsing binary systems” under the supervision of Prof. Jadwiga Daszyńska-Daszkiewicz. -->
 
 My current research explores the pulsations and evolution of stars in close binary systems. Outside of my research, I enjoy hiking and rock climbing.
