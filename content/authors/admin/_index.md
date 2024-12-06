@@ -128,9 +128,9 @@ education:
 #         percent: 80
 #         icon: camera
 
-languages:
-  - name: English
-    percent: 100
+# languages:
+#   - name: English
+#     percent: 100
 
 
 # Awards.
