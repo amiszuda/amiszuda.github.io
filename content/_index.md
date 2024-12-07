@@ -40,7 +40,8 @@ sections:
       text: |-
         My current research explores the pulsations and evolution of stars in close binary systems. In my everyday work I utilise various astrophysical tools, as 1D stellar evolution code MESA, pulsational code GYRE, as well as codes used to calculate the theoretical light curves of eclipsing binaries like Phoebe or Wilson-Deviney.
         
-        Please reach out to collaborate 😃
+        If you feel that my expertise may contribute to your own research, please feel free to reach out!
+        
     design:
       columns: '1'
   # - block: collection
