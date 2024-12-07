@@ -50,7 +50,7 @@ interests:
 
 education:
   - area: PhD Astrophysics
-    institution: University of Wrocław
+    institution: University of Wrocław (2017-2023)
     date_start: 2017-10-01
     date_end: 2023-03-27
     summary: |
@@ -59,13 +59,13 @@ education:
       text: ''
       url: ''
   - area: MS Theoretical Physics
-    institution: University of Silesia
+    institution: University of Silesia (2015-2017)
     date_start: 
     date_end: 
     summary: |
       
   - area: BSc Astronomy
-    institution: University of Wrocław
+    institution: University of Wrocław (2012-2015)
     date_start: 
     date_end: 
     summary: |
