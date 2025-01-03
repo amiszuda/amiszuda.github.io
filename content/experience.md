@@ -33,7 +33,7 @@ sections:
       title: Languages
       username: admin
       languages:
-        - Englis
-        - Polish
+        - English
+        - Polish (native language)
         - Silesian (Silesian minority in Poland)
 ---
