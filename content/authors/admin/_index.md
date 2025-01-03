@@ -128,14 +128,14 @@ education:
 #         percent: 80
 #         icon: camera
 
-languages:
-  list:
-    - name: English
-      percent: null
-    - name: Polish (native language)
-      percent: null
-    - name: Silesian (Silesian minority in Poland)
-      percent: null
+# languages:
+#   list:
+#     - name: English
+#       percent: null
+#     - name: Polish (native language)
+#       percent: null
+#     - name: Silesian (Silesian minority in Poland)
+#       percent: null
 
 
 # Awards.
