@@ -129,11 +129,13 @@ education:
 #         icon: camera
 
 languages:
-  # show_skill_percentage: false
   list:
     - name: English
+      percent: null
     - name: Polish (native language)
+      percent: null
     - name: Silesian (Silesian minority in Poland)
+      percent: null
 
 
 # Awards.
