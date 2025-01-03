@@ -32,5 +32,8 @@ sections:
     content:
       title: Languages
       username: admin
-      English, Polish, Silesian (Silesian minority in Poland)
+      languages:
+        - English
+        - Polish
+        - Silesian (Silesian minority in Poland)
 ---
