@@ -129,9 +129,11 @@ education:
 #         icon: camera
 
 languages:
-  - name: English
-  - name: Polish (native language)
-  - name: Silesian (Silesian minority in Poland)
+  show_skill_percentage: false
+  list:
+    - name: English
+    - name: Polish (native language)
+    - name: Silesian (Silesian minority in Poland)
 
 
 # Awards.
