@@ -28,12 +28,14 @@ sections:
   #   content:
   #     title: Awards
   #     username: admin
-  # - block: resume-languages
-  #   content:
-  #     title: Languages
-  #     username: admin
-  #     languages:
-  #       - English
-  #       - Polish (native language)
-  #       - Silesian (Silesian minority in Poland)
+  - block: resume-languages
+    content:
+      title: Languages
+      username: admin
+      design:
+        show_skill_percentage: false
+      languages:
+        - English
+        - Polish (native language)
+        - Silesian (Silesian minority in Poland)
 ---
