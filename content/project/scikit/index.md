@@ -1,6 +1,6 @@
 ---
 title: Asteroseismic imprints of mass-transfer
-# date: 2023-10-26
+date: 2025-01-03
 # external_link: https://github.com/scikit-learn/scikit-learn
 # tags:
 #   - Hugo
