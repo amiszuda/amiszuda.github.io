@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amadeusz Miszuda, PhD</title>
+
+<!-- Latin Modern font from Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Latin+Modern+Roman&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Latin Modern Roman', serif;
+        background-image: url('img/bg-kopia.jpg');  
+        background-size: cover;                 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;           
+        color: #ddd;
+        line-height: 1.7;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 56px;
+        font-weight: 500;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    h2, h3 {
+        font-family: 'Latin Modern Roman', serif;
+        font-weight: 400;
+        line-height: 1.3;
+        margin: 12px 0 20px 0;
+    }
+
+    .small-line {
+        font-size: 30px; 
+        font-weight: 400;
+    }
+
+    .smaller-line {
+        font-size: 22px; 
+        font-weight: 300;
+    }
+    
+
+    /*---------------------------------
+            background pattern
+    ---------------------------------*/
+
+    .bg {
+        /*background-image: url('bg-kopia.jpg');*/
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 60px 20px 120px 20px;
+        text-align: center;
+    }
+
+    .photo {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 10px 0 30px 0;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+    }
+
+    .buttons {
+        margin-bottom: 60px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 40px;
+        margin: 8px;
+        border: 2px solid #888;
+        border-radius: 10px;
+        font-size: 18px;
+        font-family: 'Latin Modern Roman', serif;
+        text-decoration: none;
+        color: #ddd;
+        transition: 0.2s;
+    }
+
+    .btn:hover {
+        /*background: #f4f4f4;*/
+    }
+
+
+    /*---------------------------------
+            central content
+    ---------------------------------*/
+    .wrapper {
+        max-width: 780px;
+        margin: -100px auto 50px auto;
+        padding: 10px 10px;
+        font-family: 'Latin Modern Roman', serif;
+
+        position: relative;
+        z-index: 1;
+
+        /* transparent + soft blur gradient */
+        background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 80%);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+
+        box-shadow: 0 0 20px rgba(0,0,0,0.02); /* bardzo subtelne */
+    }
+
+    /*.wrapper p {
+        margin-bottom: 1.2em;
+    }*/
+
+    a {
+        color: #b40000;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .icon-link:hover svg {
+        opacity: 0.6;
+    }
+
+    #content {
+        text-align: justify;
+    }
+
+    #content a {
+        color: #ddd;
+        font-weight: normal;  /* bez pogrubienia */
+        text-decoration: underline;
+    }
+
+    #content a:hover {
+        text-decoration: underline;
+    }
+
+    /*---------------------------------
+                   footer
+    ---------------------------------*/
+    /*footer {
+        text-align: center;
+        padding: 30px;
+        font-size: 16px;
+        color: #777;
+        font-family: 'Latin Modern Roman', serif;
+    }*/
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;       /* Wyrównanie pionowe */
+        padding: 20px 40px;        /* odsunięcie od brzegów (ważne!) */
+        font-size: 16px;
+        color: #777;
+        font-family: 'Latin Modern Roman', serif;
+
+        height: 60px;              /* <<< wymusza jedną linię */
+        box-sizing: border-box;
+    }
+
+    /* LEWA STRONA */
+    .footer-left {
+        display: flex;
+        align-items: center;
+        gap: 24px;                 /* większy odstęp między ikonami */
+    }
+
+    /* odstęp od lewej krawędzi */
+    .footer-left {
+        margin-left: 10px;
+    }
+
+    /* PRAWA STRONA */
+    .footer-right {
+        white-space: nowrap;
+        margin-right: 10px;
+    }
+
+    /* IKONY */
+    .icon-link svg {
+        width: 22px;
+        height: 22px;
+        fill: #777;
+        display: block;            /* <<< eliminuje wpływ na line-height */
+        transition: opacity 0.2s;
+    }
+
+</style>
+
+<!-- Markdown parser -->
+<script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+
+<script>
+async function loadMD() {
+    const res = await fetch('content.md');
+    const txt = await res.text();
+    const converter = new showdown.Converter({tables:true, ghCodeBlocks:true});
+    document.getElementById("content").innerHTML = converter.makeHtml(txt);
+}
+
+loadMD();
+</script>
+
+</head>
+
+<body>
+
+<div class="bg">
+    <h1>Amadeusz Miszuda, PhD</h1>
+    <h3>
+        <span class="small-line"><b>Stellar Astrophysicist</b> and <b>Asteroseismologist</b></span> at <br>
+        <span class="smaller-line">Nicolaus Copernicus Astronomical Centre</span> <br>
+        <span class="smaller-line">Polish Academy of Sciences</span>
+    </h3>
+
+    <img src="img/photo.jpg" class="photo" alt="profile photo">
+
+    <div class="buttons">
+        <a href="files/CV_resume.pdf" class="btn">CV</a>
+        <a href="https://shorturl.at/baZMk" class="btn">ADS</a>
+        <a href="https://orcid.org/0000-0002-9382-2542" class="btn">ORCID</a>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div id="content">
+        <!-- MD will load here -->
+    </div>
+</div>
+
+<!-- <footer>
+    © 2025 A. Miszuda — Built with HTML + Markdown
+</footer> -->
+
+<footer>
+    <div class="footer-left">
+        <a href="mailto:amiszuda.astro@gmail.com" class="icon-link" title="Email">
+            <svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4zm10 7L3.5 6h17L12 11zm0 2l-9-6.5V18h18V6.5L12 13z"/></svg>
+        </a>
+
+        <a href="https://orcid.org/0000-0002-9382-2542" class="icon-link" title="ORCID">
+            <svg viewBox="0 0 24 24"><path d="M12 0a12 12 0 1 0 12 12A12 12 0 0 0 12 0zm-2.4 6.9v10.2H6.8V6.9h2.8zm3.4 0c3.2 0 5.3 2.3 5.3 5.1s-2.1 5.1-5.3 5.1H10V6.9z"/></svg>
+        </a>
+
+        <a href="https://github.com/amiszuda" class="icon-link" title="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 .3A12 12 0 0 0 0 12.6c0 5.4 3.4 10 8.2 11.6.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2.9 1.6 2.4 1.2 3 .9.1-.7.4-1.2.7-1.5-2.7-.3-5.6-1.4-5.6-6.2 0-1.4.5-2.6 1.2-3.5-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.2a11.2 11.2 0 0 1 6.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.7.2 3 .1 3.3.8.9 1.2 2.1 1.2 3.5 0 4.8-3 5.9-5.7 6.2.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6C20.6 22.6 24 18 24 12.6A12 12 0 0 0 12 .3z"/></svg>
+        </a>
+    </div>
+
+    <div class="footer-right">
+        © 2025 A. Miszuda — Built with HTML + Markdown
+    </div>
+</footer>
+
+</body>
+</html>
